@@ -1,13 +1,14 @@
 
-- [Brief](#brief)
-- [Grading](#grading)
-- [Assignments](#assignments)
-- [Error reporting](#error-reporting)
-- [Indentation check](#indentation-check)
-  - [Possible styles](#possible-styles)
-    - [Java-style](#java-style)
-    - [Allman-style](#allman-style)
-- [Literature](#literature)
+- [Краткое описание курса](#brief)
+- [Оценки](#grading)
+- [Как сдавать домашние задания](#assignments)
+- [Вы заметили ошибку или хотите что-то изменить?](#error-reporting)
+- [Описание шаблона проекта](#project-template-description)
+- [Как проверяются отступы?](#indentation-check)
+  - [Допустимые стили](#possible-styles)
+    - [Стиль Java](#java-style)
+    - [Стиль Allman](#allman-style)
+- [Литература и полезные ссылки](#literature)
 
 <a name="brief"><h1>Краткое описание курса</h1></a>
 
@@ -33,7 +34,7 @@
 
 Код с неправильно расставленными отступами не принимается и не оценивается. Список допустимых стилей расстановки отступов с пояснениями находится [здесь](#possible-styles).
 
-<a name="Assignments"><h1>Как сдавать домашние задания</h1></a>
+<a name="assignments"><h1>Как сдавать домашние задания</h1></a>
 
 При появлении нового задания каждому студенту на почту приходит оповещение следующего вида:
 > @roman-khazanskii has invited you to collaborate on the spbstu-microprocessors/assignment_1_student_name repository
@@ -61,12 +62,12 @@
 Далее каждый pull-request проверяется преподавателем; отзыв преподавателя размещается в комментариях. Если задание принято, то pull-request принимается и в файле `README.md` задания появляется оценка.  
 Если задание не принято, то pull-request отклоняется.
 
-<a name="error reporting"><h1>Вы заметили ошибку или хотите что-то изменить?</h1></a>
+<a name="error-reporting"><h1>Вы заметили ошибку или хотите что-то изменить?</h1></a>
 
 Если вы заметили ошибку в задании, в презентации, в коде проверочного скрипта и т.д., пожалуйста, создайте [issue](https://github.com/spbstu-microprocessors/lectures/issues).
 
 
-<a name="Project template descritption"><h1>Описание шаблона проекта</h1></a>
+<a name="project-template-description"><h1>Описание шаблона проекта</h1></a>
 
 ![project_template](.images/project_template.png)
 
@@ -84,7 +85,7 @@
 *  src - в этой папке должны размещаться все файлы с исходным кодом
 *  example.uvproj - файл проекта для среды разработки.
 
-<a name="Indentation check"><h1>Как проверяются отступы?</h1></a>
+<a name="indentation-check"><h1>Как проверяются отступы?</h1></a>
 
 Найти программы для автоматической проверки стиля кода не удалось, только программы для автоматической *коррекции* стиля. Поэтому проверка осуществляется самым простым способом - с помощью программы `astyle` скрипт генерирует несколько правильных вариантов и последовательно сравнивает исходный вариант с ними.
 При обнаружении полного совпадения стиль признается допустимым.
@@ -92,18 +93,18 @@
 
 Что же помешает студенту заранее запустить `astyle` и исправить свой стиль?..
 
-<a name="Possible styles"><h2>Допустимые стили</h2></a>
+<a name="possible-styles"><h2>Допустимые стили</h2></a>
 
 `astyle` поддерживает довольно много стилей, из которого были выбраны стиль "java" и стиль "allman", как самые простые и распространенные; для каждого стиля допускается использование 2 пробелов, 4 пробелов или символа табуляции (но не вперемешку).
 
-<a name="Java-style"><h3>Стиль Java</h3></a>
+<a name="java-style"><h3>Стиль Java</h3></a>
 ```
 if (isAwesome) { <-- обратите внимание на пробел перед фигурной скобкой!
   return true;
 }
 ```
 
-<a name="Allman-style"><h3>Стиль Allman</h3></a>
+<a name="allman-style"><h3>Стиль Allman</h3></a>
 ```
 if (isAwesome)
 {
@@ -114,7 +115,7 @@ if (isAwesome)
 Если вы хотите, чтобы какой-нибудь другой стиль тоже начал поддерживаться, пожалуйста, создайте [issue](https://github.com/spbstu-microprocessors/lectures/issues).
 
 
-<a name="Literature"><h1>Литература и полезные ссылки</h1></a>
+<a name="literature"><h1>Литература и полезные ссылки</h1></a>
 
 * Мартин М. Инсайдерское руководство по STM32
 * http://easyelectronics.ru/category/arm-uchebnyj-kurs
